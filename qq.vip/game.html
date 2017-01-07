@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/qq.css" rel="stylesheet" />
+		<script src="js/html5shiv.min.js"></script>
+		<script>
+			window.onload = function() {
+				var wrap = document.querySelector('.dbanner');
+				var img = document.querySelector('.dimg');
+				var lis1 = img.getElementsByTagName('li');
+				var navs = document.querySelector('.dnavs');
+				var lis = navs.getElementsByTagName('li');
+				var imgs = img.getElementsByTagName('img');
+				var sImg = navs.getElementsByTagName('img');
+				var now = 0;
+				var img1 = [
+					"img/gbanner1.jpg",
+					"img/gbanner2.jpg",
+					"img/gbanner3.jpg",
+					"img/gbanner4.jpg",
+					"img/gbanner5.jpg"
+				];
+				var c = [
+					"#157cd9",
+					"#feaf38",
+					"#070f33",
+					"#002b82",
+					"#424c91"
+				];
+				var timer = 0;
+				timer = setInterval(next,4000);
+
+				for(var i = 0; i < img1.length; i++) {
+					img.innerHTML += '<li style="background:'+ c[i] +'"><img src="'+img1[i]+'"/></li>';
+					navs.innerHTML += '<li></li>';
+				}
+				show();
+				
+				for(var i = 0; i < img1.length; i++) {
+					lis[i].index = i;
+					lis[i].onmouseover = function() {
+						now = this.index;
+						show();
+						clearInterval(timer);
+					};
+					lis[i].onmouseout = function(){
+						timer = setInterval(next,3000);
+					};
+				}
+				function show() {
+					for(var i =0; i < imgs.length; i++) {
+						lis1[i].style.opacity = 0;
+						lis[i].className = "";
+					}
+					
+					lis1[now].style.opacity = 1;
+					lis[now].className = "active";
+					
+				}
+				function next() {
+					for(var i =0; i < imgs.length; i++) {
+						lis1[i].style.opacity = 0;
+						lis[i].className = "";
+					}
+					now++;
+					if(now > lis.length-1) {
+						now = 0;
+					}
+					lis[now].className = "active";
+					lis1[now].style.opacity = 1;
+				
+
+				};
+
+			};
+		</script>
+	</head>
+	<body id="gbody">
+		<header id="gheader">
+			<div class="wrap clearfix">
+				<div class="ghleft">
+					<a href="index.html"><img src="img/glogo.png"/></a>
+				</div>
+				<ul class="nav gnav clearfix">
+					<li>
+						<a href="function.html" class="">功能特权</a>
+						<nav class="subNav">
+							<div class="wrap swrap subNav3">
+								<a href="#">全部特权</a>
+								<a href="#">分等级特权</a>
+							</div>
+						</nav>
+					</li>
+					<li>
+						<a href="game.html" class="active">游戏特权</a>
+					</li>
+					<li>
+						<a href="life.html">生活特权</a>
+					</li>
+					<li>
+						<a href="decoration.html">装扮特权</a>
+					</li>
+					<li>
+						<a href="member.html">会员活动</a>
+						<nav class="subNav">
+							<div class="wrap swrap subNav1">
+								<a href="#">全部活动</a>
+								<a href="#">靓号站</a>
+							</div>
+						</nav>
+					</li>
+					<li>
+						<a href="#">成长体系</a>
+						<nav class="subNav">
+							<div class="wrap swrap subNav2">
+								<a href="#">任务中心</a>
+								<a href="#">积分乐园</a>
+								<a href="#">排名中心</a>
+							</div>
+						</nav>
+					</li>
+					<li>
+						<a href="consume.html">年费专区</a>
+					</li>
+				</ul>
+				<div class="hright">
+					<a href="#"><span class="ibutton">登录</span></a>
+				</div>
+			</div>
+		</header>
+		<section class="dbanner">
+			<ul class="dimg"></ul>
+			<ul class="dnavs"></ul>
+		</section>
+		<section class="wrap">
+			<div class="gchoice clearfix">
+				<div class="gcleft clearfix">
+					<img src="img/gclPic.png" />
+					<h2>热门游戏专区</h2>
+					<span class="gdash"></span>
+				</div>
+				<div class="gcright">
+					<nav class="gcnav1">
+						<a href="#">竞技游戏</a>
+						<a href="#">动作游戏</a>
+						<a href="#">角色扮演</a>
+						<a href="#">休闲游戏</a>
+						<a href="#">手机游戏</a>
+						<a href="#" class="active">网页游戏</a>
+					</nav>					<nav class="gcnav2">
+						<a href="#">火影忍者</a>
+						<a href="#"> 龙啸天下<span class="gcnavbg"></span></a>
+						<a href="#">暴风王座<span class="gcnavbg1"></span></a>
+						<a href="#">逍遥<span class="gcnavbg2"></span></a>
+					</nav>
+				</div>
+			</div>
+		</section>
+		<section class="ggift">
+			<div class="wrap clearfix">
+				<div class="ggtitle clearfix">
+					<h2>礼包免费领</h2>
+					<h3>我的礼包</h3>
+				</div>
+				<ul>
+					<li>
+						<a href="#"><img src="img/gift1.png" /></a>
+						<span class="ggdash"></span>
+						<p><a href="#">夏日趴,剑灵有礼!</a></p>
+					</li>
+					<li>
+						<a href="#"><img src="img/gift2.png" /></a>
+						<span class="ggdash"></span>
+						<p><a href="#">海量好礼超值购!</a></p>
+					</li>
+					<li>
+						<a href="#"><img src="img/gift3.png" /></a>
+						<span class="ggdash"></span>
+						<p><a href="#">预约冒险岛2，抢内测资格</a></p>
+					</li>
+					<li>
+						<a href="#"><img src="img/gift4.png" /></a>
+						<span class="ggdash"></span>
+						<p><a href="#">穿越火线八周年狂欢</a></p>
+					</li>
+					<li>
+						<a href="#"><img src="img/gift5.png" /></a>
+						<span class="ggdash"></span>
+						<p><a href="#">勇者大冒险</a></p>
+					</li>
+					<li>
+						<a href="#"><img src="img/gift6.png" /></a>
+						<span class="ggdash"></span>
+						<p><a href="#">夏日激战</a></p>
+					</li>
+					<li>
+						<a href="#"><img src="img/gift7.png" /></a>
+						<span class="ggdash"></span>
+						<p><a href="#">极品好礼等你拿!</a></p>
+					</li>
+					<li>
+						<a href="#"><img src="img/gift8.png" /></a>
+						<span class="ggdash"></span>
+						<p><a href="#">神之浩劫超值大礼!</a></p>
+					</li>
+					<li>
+						<a href="#"><img src="img/gift9.png" /></a>
+						<span class="ggdash"></span>
+						<p><a href="#">商城全免费,送永久武器</a></p>
+					</li>
+					<li>
+						<a href="#"><img src="img/gift10.png" /></a>
+						<span class="ggdash"></span>
+						<p><a href="#">使命召唤</a></p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="gplay">
+			<div class="wrap clearfix">
+				<div class="gpleft clearfix">
+					<h2>新游抢先玩</h2>
+					<ul>
+						<li>
+							<a href="#"><img src="img/play1.png" /></a>
+							<span class="gpdash"></span>
+							<p><a href="#">预约冒险岛2，抢内测资格</a></p>
+						</li>
+						<li>
+							<a href="#"><img src="img/play2.png" /></a>
+							<span class="gpdash"></span>
+							<p><a href="#">天刀公测抢Q币</a></p>
+						</li>
+						<li>
+							<a href="#"><img src="img/play3.png" /></a>
+							<span class="gpdash"></span>
+							<p><a href="#">来抢Q币，黄钻啦~</a></p>
+						</li>
+						<li>
+							<a href="#"><img src="img/play4.png" /></a>
+							<span class="gpdash"></span>
+							<p><a href="#">轩辕传奇</a></p>
+						</li>
+					</ul>
+				</div>
+				<div class="gpright clearfix">
+					<h3>新游热度榜</h3>
+					<span class="gpbg1"></span>
+					<span class="gpbg2"></span>
+					<ul>
+						<li class="clearfix">
+							<img src="img/play5.png" />
+							<div class="gprright">
+								<h4><a href="#">预约抢内测资格</a></h4>
+								<p><a href="#">预约抢内测资格</a></p>
+							</div>
+						</li>
+						<li class="clearfix">
+							<img src="img/play6.png" />
+							<div class="gprright">
+								<h4><a href="#">全职大师</a></h4>
+								<p><a href="#">抢内测激活码</a></p>
+							</div>
+						</li>
+						<li class="clearfix">
+							<img src="img/play7.png" />
+							<div class="gprright">
+								<h4><a href="#">抢限量豪礼</a></h4>
+								<p><a href="#">神之浩劫</a></p>
+							</div>
+						</li>
+						<li class="clearfix">
+							<img src="img/play8.png" />
+							<div class="gprright">
+								<h4><a href="#">兽人必须死</a></h4>
+								<p><a href="#">限量激活码</a></p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="ghot">
+			<div class="wrap clearfix">
+				<div class="gholeft">
+					<h2>热门手游</h2>
+					<ul class="clearfix">
+						<li>
+							<a href="#">
+								<!--<img src="img/ghot1.png"/>-->
+								<span class="ghotpic ghot1"></span>
+								<span>王者荣耀</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="ghotpic ghot2"></span>
+								<span>天天酷跑</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="ghotpic ghot3"></span>
+								<span>穿越火线手游版</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="ghotpic ghot4"></span>
+								<span>火影忍者</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="ghoright">
+					<h2>热门页游</h2>
+					<ul class="clearfix">
+						<li>
+							<a href="#"><img src="img/ghot5.png"/></a>
+							<p><a href="#">怪物猎人开拓记</a></p>
+						</li>
+						<li>
+							<a href="#"><img src="img/ghot6.png"/></a>
+							<p><a href="#">时空神域</a></p>
+						</li>
+						<li>
+							<a href="#"><img src="img/ghot7.png"/></a>
+							<p><a href="#">决战西游</a></p>
+						</li>
+						<li>
+							<a href="#"><img src="img/ghot8.png"/></a>
+							<p><a href="#">逍遥</a></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="ibody gbody">
+			<div class="wrap">
+				<ul class="blist">
+					<li class="ibody1">
+						<a href="#">
+							<span class="ipic1"></span>
+							<span class="ipic2"></span>
+							<span class="ibname">官方手Q账号</span>
+						</a>
+					</li>
+					<li class="ibody2">
+						<a href="#">
+							<span class="ipic1"></span>
+							<span class="ipic3"></span>
+							<span class="ibname">官方微信账号</span>
+						</a>
+					</li>
+					<li class="ibody3">
+						<a href="#">
+							<span class="ipic1"></span>
+							<span class="ibname">兑换中心</span>
+						</a>
+					</li>
+					<li class="ibody4">
+						<a href="#">
+							<span class="ipic1"></span>
+							<span class="ibname">兴趣部落</span>
+						</a>
+					</li>
+					<li class="ibody5">
+						<a href="#">
+							<span class="ipic1"></span>
+							<span class="ibname">官方空间</span>
+						</a>
+					</li>
+					<li class="ibody6">
+						<a href="#">
+							<span class="ipic1"></span>
+							<span class="ibname">官方微博</span>
+						</a>
+					</li>
+					<li class="ibody7">
+						<a href="#">
+							<span class="ipic1"></span>
+							<span class="ibname">客服中心</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<div class="itr gtr">
+			<p>Copyright © 1998 - 2016 Tencent . All Rights Reserved</p>
+			<p>腾讯公司 版权所有</p>
+		</div>
+	</body>
+</html>

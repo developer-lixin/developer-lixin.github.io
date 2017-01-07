@@ -1,0 +1,871 @@
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	border: none;
+	vertical-align: top;
+}
+
+form {
+	margin: 0;
+}
+
+input {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+.clearfix {
+	zoom: 1;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+body {
+	background: #f5f5f5;
+}
+#header {
+	height: 71px;
+	background: url(../img/header1.png) repeat-x;
+}
+
+.wrap {
+	position: relative;
+	width: 983px;
+	margin: 0 auto;
+}
+
+.wrap #logo {
+	float: left;
+	height: 71px;
+}
+
+#logo img {
+	padding-top: 23px;
+}
+
+.nav {
+	float: left;
+	height: 71px;
+	margin-left: 16px;
+}
+
+.nav a {
+	float: left;
+	background: url(../img/header1.png) no-repeat right -91px;
+	font: 14px/71px "宋体";
+	color: #ccc;
+	margin-right: -2px;
+	z-index: 1;
+}
+
+.nav a .span2 {
+	padding: 0 21px 0 20px;
+}
+
+.nav a #span3 {
+	padding-right: 42px;
+}
+
+.nav a .navbg1 {
+	position: absolute;
+	float: left;
+	left: 92px;
+	top: 23px;
+	width: 26px;
+	height: 17px;
+	background: url(../img/music.gif) no-repeat;
+	background-position: -144px -62px;
+}
+.nav a:hover {
+	background: url(../img/header1.png) repeat-x 0px -840px;
+	z-index: 2;
+}
+.nav a:hover .span1 {
+	float: left;
+	background: url(../img/header1.png) no-repeat left -269px;
+}
+.nav a:hover .span2 {
+	float: left;
+	background: url(../img/header1.png) no-repeat right -553px;
+}
+.nav .navbg {
+	position: relative;
+	background: none;
+}
+.search {
+	float: left;
+	width: 178px;
+	height: 31px;
+	background: #eaeaea url(../img/music.gif) no-repeat -253px -56px;
+	margin: 21px 0 0 143px;
+	border-radius: 15px;
+	font: 12px/28px "宋体";
+	padding-left: 32px;
+	border: none;
+	color: #9b9b9b;
+}
+.choice {
+	position: relative;
+	float: left;
+	border: none;
+	background: none;
+	color: #787878;
+	margin: 34px 0 0 14px;
+	font-size: 12px;
+	font-weight: bold;
+}
+.choice span {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 47px;
+	height: 10px;
+	background: url(../img/music.gif) no-repeat -206px -66px;
+}
+.nav .active {
+	position: relative;
+}
+.nav .active,.nav .active:hover {
+	background: url(../img/header1.png) repeat-x 0 -683px;
+	z-index: 2;
+}
+.nav .active .span1 {
+	float: left;
+	background: url(../img/header1.png) no-repeat left -269px;
+}
+.nav .active .span2 {
+	float: left;
+	background:url(../img/header1.png) no-repeat right -553px;
+}
+.nav .active .red-arrows {
+	position: absolute;
+	left: 42px;
+	top: 63px;
+	width: 14px;
+	height: 8px;
+	background:url(../img/red.gif) no-repeat; 
+}
+#itr {
+	height: 34px;
+	background: url(../img/itrbg.png) repeat-x;
+}
+.classify {
+	margin-left: 177px;
+	font: 12px/20px "宋体";
+}
+.classify a {
+	float: left;
+	padding: 2px 13px 0 13px;
+	color: #fff;
+	margin: 6px 18px 0 18px;
+}
+.classify a:hover {
+	background: #900403;
+	border-radius: 10px;
+}
+#pic {
+	height: 336px;
+	background: url(../img/picbg.png) repeat-x;
+}
+#pic .left-arrows {
+	position: absolute;
+	left: -51px;
+	top: 149px;
+	width: 19px;
+	height: 37px;
+	background: url(../img/left-arrows.gif) no-repeat;
+}
+#pic .left-arrows:hover {
+	position: absolute;
+	left: -60px;
+	top: 137px;
+	width: 37px;
+	height: 63px;
+	background: #000 url(../img/left-arrows.gif) no-repeat 9px 12px;
+	opacity: .3;
+	filter: alpha (opacity=20)
+}
+#pic .right-arrows {
+	position: absolute;
+	right: -51px;
+	top: 149px;
+	width: 19px;
+	height: 37px;
+	background: url(../img/right-arrows.gif) no-repeat;
+}
+#pic .right-arrows:hover {
+	position: absolute;
+	right: -59px;
+	top: 137px;
+	width: 37px;
+	height: 63px;
+	background: #000 url(../img/right-arrows.gif) no-repeat 10px 12px;
+	opacity: .3;
+	filter: alpha (opacity=20)
+}
+.img {
+	float: left;
+	width: 729px;
+	height: 336px;
+}
+#pic .img1 {
+	float: right;
+	position: relative;
+	width: 253px;
+	height: 336px;
+}
+
+.pic1 .pic2 {
+	position: absolute;
+	left: 19px;
+	bottom: 68px;
+	width: 215px;
+	height: 56px;
+	background: url(../img/picbg.gif) no-repeat;
+}
+.pic1 a:hover {
+	background: url(../img/picbg2.gif) no-repeat;
+}
+.pic1 p {
+	position: absolute;
+	font: 12px/38px Arial, "宋体";
+	bottom: 30px;
+	left: 15px;
+	color: #8d8d8d;
+}
+#box {
+	background: #f5f5f5;
+}
+.left a:hover {
+	text-decoration: underline;
+}
+#right a:hover {
+	text-decoration: underline;
+}
+.left {
+	float: left;
+	width: 729px;
+	height: 1500px;
+	border-left: 1px solid #d3d3d3;
+	border-right: 1px solid #d4d4d4;
+	background: #fff;
+}
+.header1 {
+	width: 689px;
+	height: 36px;
+	padding-top: 17px;
+	margin: 0 20px;
+	border-bottom: 2px solid #c10d0c;
+}
+h2 {
+	position: relative;
+	float: left;
+	font: 20px/36px "宋体";
+	padding-left: 34px;
+	margin-right: 7px;
+}
+.header1 span {
+	position: absolute;
+	left: 10px;
+	top: 11px;
+	width: 14px;
+	height: 14px;
+	background: url(../img/music.gif) no-repeat;
+}
+.header1 .circle {
+	background-position: -4px -2px;
+}
+.kind {
+	margin-top: 2px;
+	font: 12px/34px "宋体";
+}
+.kind a {
+	float: left;
+	padding: 0 16px 0 12px;
+	color: #666;
+	background: url(../img/border.png) no-repeat 50px 12px;
+}
+.header1 p {
+	position: relative;
+	float: right;
+	margin-top: 6px;
+	padding-right: 27px;
+	font: 12px/30px "宋体";
+}
+.header1 a {
+	color: #666;
+}
+.header1 p span {
+	position: absolute;
+	left: 31px;
+	top: 13px;
+	width: 8px;
+	height: 6px;
+	background: url(../img/music.gif) no-repeat;
+}
+.header1 p .arrows {
+	background-position: -61px -3px;
+}
+.cont {
+	width: 729px;
+	padding-top: 20px;
+}
+.cont li {
+	float: left;
+	width: 140px;
+	height: 187px;
+	padding: 0 22px 47px 20px;
+	overflow: hidden;
+}
+.cont .music {
+	position: relative;
+	width: 140px;
+	height: 140px;
+}
+.cont img {
+	width: 140px;
+	height: 140px;
+}
+.cont .dash {
+	position: absolute;
+	width: 140px;
+	height: 27px;
+	background: #000;
+	left: 0;
+	bottom: 0;
+	opacity: .5;
+	filter: alpha (opacity=50);
+}
+.cont .addition1 {
+	position: absolute;
+	width: 14px;
+	height: 18px;
+	left: 10px;
+	bottom: 0px;
+	background: url(../img/music.gif) no-repeat;
+	background-position: -105px -70px;
+}
+.cont .addition2 {
+	position: absolute;
+	font: 12px/24px "宋体";
+	left: 29px;
+	bottom: 0;
+	color: #ccc;
+}
+.cont .addition3 {
+	position: absolute;
+	background: url(../img/music.gif) no-repeat;
+	background-position: -56px -66px;
+	width: 17px;
+	height: 17px;
+	left: 114px;
+	bottom: 5px;
+}
+.music a:hover {
+	color: #fff;
+	background: url(../img/play.gif) no-repeat;
+}
+.cont p {
+	margin-top: 8px;
+}
+.cont .p1 {
+	text-indent: 41px;
+	height: 20px;
+	background: url(../img/pbg.png) no-repeat 0 4px;
+}
+.cont a {
+	font: 14px/20px "宋体";
+	color: #000;
+}
+.footer {
+	width: 729px;
+}
+.footer img {
+	width: 689px;
+	height: 75px;
+	margin-left: 20px;
+}
+.header2 {
+	padding-top: 32px;
+}
+.body {
+	position: relative;
+	width: 687px;
+	height: 186px;
+	border: 1px solid #d3d3d3;
+	margin: 20px 0 0 20px;
+}
+.body .arrowsL {
+	position: absolute;
+	left: 9px;
+	top: 72px;
+	width: 8px;
+	height: 14px;
+	background: url(../img/music.gif) no-repeat;
+	background-position: -242px -2px;
+}
+.body .arrowsL:hover {
+	background: url(../img/hover.gif) no-repeat;
+}
+.body .arrowsR {
+	position: absolute;
+	left: 666px;
+	top: 72px;
+	width: 8px;
+	height: 14px;
+	background: url(../img/music.gif) no-repeat;
+	background-position: -268px -2px;
+}
+.body .arrowsR:hover {
+	background: url(../img/hover.gif) no-repeat -60px 0;
+}
+.cont2 {
+	width: 669px;
+	height: 143px;
+	margin: 1px;
+	padding: 28px 0 13px 16px;
+	background: #f5f5f5;
+}
+.cont2 li {
+	float: left;
+	padding-left: 11px;
+}
+.cont2 h3 {
+	padding-bottom: 3px;
+	font: 12px/12px "宋体";
+}
+.cont2 p {
+	font: 12px/18px "宋体";
+}
+.cont2 a {
+	color: #000;
+}
+.header3 {
+	padding-top: 43px;
+}
+.list {
+	width: 689px;
+	height: 470px;
+	border: 1px solid #d5d5d5;
+	margin: 20px 0 0 20px;
+}
+.lists {
+	float: left;
+	border-right: 1px solid #d5d5d5;
+}
+.list3R {
+	border-right: none;
+}
+.list1,
+.list2,
+.list3 {
+	width: 226px;
+	height: 450px;
+	font-size: 0;
+	margin: 1px;
+	background: #f4f4f4;
+	padding-top: 18px;
+}
+.list1 .listtop {
+	width: 208px;
+	height: 100px;
+	padding-left: 8px;
+}
+.list2 .listtop,
+.list3 .listtop {
+	width: 207px;
+	height: 100px;
+	padding-left: 9px;
+}
+.list img {
+	float: left;
+}
+.list1 img {
+	float: left;
+	width: 96px;
+	height: 100px;
+	margin-right: 4px;
+}
+.lists h3 {
+	position: relative;
+	float: right;
+	width: 100px;
+	height: 76px;
+}
+.lists .play1 {
+	position: absolute;
+	left: 0;
+	top: 35px;
+	width: 22px;
+	height: 22px;
+	background: url(../img/music.gif) no-repeat;
+	background-position: 0 -66px;
+}
+.lists .play1:hover {
+	background: url(../img/hover.gif) no-repeat 0 -52px;
+}
+.lists .nub {
+	position: absolute;
+	left: 32px;
+	top: 37px;
+	width: 20px;
+	height: 19px;
+	background: url(../img/music.gif) no-repeat;
+	background-position: -164px 0;
+}
+.lists .nub:hover {
+	background: url(../img/hover.gif) no-repeat -60px -52px;
+}
+.lists h3 a {
+	font: 14px/32px "宋体";
+	color: #333;
+}
+.lists .songs {
+	width: 227px;
+	height: 320px;
+}
+.lists li {
+	position: relative;
+	width: 227px;
+	height: 32px;
+}
+.lists li:hover {
+	position: relative;
+}
+.lists li span {
+	float: left;
+	font: 16px/32px "Arial";
+	padding-left: 26px;
+}
+.lists li a {
+	float: left;
+	width: 90px;
+	overflow: hidden;
+	white-space: nowrap;
+	font: 12px/32px Arial, "宋体";
+	color: #000;
+	
+}
+.lists li a:hover {
+	width: 120px;
+	font: 12px/32px Arial, "宋体";
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.lists li span {
+	margin-right: 12px;
+	font-weight: bold;
+	color: #666;
+}
+.lists .listlast span {
+	padding-left: 22px;
+	margin-right: 8px;
+}
+
+.lists li .nub1 {
+	color: #c10d0c;
+}
+.lists .songsbg {
+	background: #e8e8e8;
+}
+.lists .songsbg1 {
+	position: absolute;
+	left: 147px;
+	top: 7px;
+	width: 17px;
+	height: 17px;
+	background: url(../img/songhover.gif) no-repeat;
+}
+.lists a:hover .songsbg1 {
+	position: absolute;
+	left: 147px;
+	top: 7px;
+	width: 17px;
+	height: 17px;
+	width: 17px;
+	height: 17px;
+	background: url(../img/songhover1.gif) no-repeat;
+}
+.lists .songsbg2 {
+	position: absolute;
+	left: 25px;
+	top: 2px;
+	width: 13px;
+	height: 13px;
+	background: url(../img/songhover.gif) no-repeat;
+	background-position: -25px -2px;
+}
+.lists a:hover .songsbg2 {
+	position: absolute;
+	left: 25px;
+	top: 2px;
+	width: 13px;
+	height: 13px;
+	background: url(../img/songhover1.gif) no-repeat;
+	background-position: -25px -2px;
+}
+.lists .songsbg3 {
+	position: absolute;
+	left: 23px;
+	top: 0px;
+	width: 16px;
+	height: 14px;
+	background: url(../img/songhover.gif) no-repeat;
+	background-position: -48px -2px;
+}
+.lists a:hover .songsbg3 {
+	position: absolute;
+	left: 22px;
+	top: 0px;
+	width: 16px;
+	height: 14px;
+	background: url(../img/songhover1.gif) no-repeat;
+	background-position: -47px -2px;
+}
+.lists p {
+	text-align: right;
+	padding-right: 38px;
+	font: 12px/30px "宋体";
+	background: #e8e8e8;
+}
+.lists p a {
+	color: #000;
+}
+#right {
+	float: right;
+	width: 250px;
+	height: 1500px;
+	border-right: 1px solid #d3d3d3;
+	background: #fff;
+}
+.login {
+	position: relative;
+	width: 204px;
+	height: 108px;
+	padding: 16px 24px 0 22px;	
+	background: url(../img/login.png) no-repeat;
+}
+.login .span1 {	
+	width: 204px;
+	font: 12px/22px "宋体";
+	color: #666;	
+}
+/*.login img {	
+	width: 100px;
+	height: 30px;
+	margin: 16px 0 0 53px;
+}*/
+.login .down {
+	position: absolute;
+	top: 75px;
+	left: 74px;
+	width: 100px;
+	height: 30px;
+	background: url(../img/redbg.png) no-repeat;
+}
+.login .use {
+	margin-left: 26px;
+	font: 12px/30px "宋体";
+	color: #fff;
+}
+#right .login a:hover {
+	background: url(../img/redbg-hover.gif) no-repeat;
+	text-decoration: none;
+}
+.singer {
+	width: 210px;
+	padding: 12px 20px 0;
+}
+.singer .title {
+	border-bottom: 1px solid #ccc;
+}
+.title h3 {
+	float: left;
+	font: 12px/28px "宋体";
+	color: #333;
+}
+.title p {
+	float: right;
+	font: 12px/28px "宋体";
+}
+.title a {
+	color: #666; 
+}
+.singer li {
+	position: relative;
+	width: 208px;
+	height: 60px;
+	border: 1px solid #e9e9e9;
+	margin-top: 14px;	
+	vertical-align: top;
+}
+.singer .enterbg {
+	position: absolute;
+	width: 208px;
+	height: 60px;
+}
+.singer .first {
+	margin-top: 20px;
+}
+#right .enterbg:hover {
+	background: #f4f4f4;
+	text-decoration: none;
+}
+.singer img {
+	position: absolute;
+	left:-1px;
+	top: -1px;
+	width: 62px;
+	height: 62px;
+}
+.enterR {
+	width: 133px;
+	height: 60px;
+	padding-left: 76px;
+}
+.enterR h4 {	
+	font: 14px/36px "宋体";
+	color: #333;
+}
+.enterR p {
+	font: 12px/24px "宋体";
+	color: #666;
+}
+.slast {
+	background: url(../img/slast.png) no-repeat 0 14px;
+	font: 14px/28px "宋体";		
+}
+.singer .slast a {
+	padding: 16px 0 0 45px;
+	display: block;
+	color: #333;
+}
+#right .slast a:hover {
+	text-decoration: none;
+	background: url(../img/slasthover.gif) no-repeat 0 14px;
+}
+.hot {
+	width: 210px;
+	padding: 25px 20px 0;
+}
+.hot h3 {
+	width: 210px;
+	font: 12px/28px "宋体";
+	color: #333;
+	border-bottom: 1px solid #ccc;
+}
+.popular li {
+	width: 210px;
+	height: 40px;	
+	margin-top: 10px;	
+}
+.popular img {
+	float: left;
+	width: 40px;
+	height: 40px;
+}
+.popular .hotfir {
+	margin-top: 20px;	
+}
+.popular .hotR {
+	float: right;
+	width: 160px;
+	height: 40px;
+	display: inline-block;	
+}
+.popular p {
+	font: 12px/22px "宋体";
+	background: url(../img/music.gif) no-repeat -214px -28px;
+}
+.popular a {
+	color: #000;
+}
+.popular .hot6 {
+	background: url(../img/music.gif) no-repeat -202px -27px;
+}
+.popular span {
+	font: 12px/16px "宋体";
+	color: #666;
+	margin-top: 2px;
+}
+#footer {
+	height: 124px;
+	border-top: 1px solid #d5d5d5;
+	background: #f9f9f9;
+}
+.wrap1 {
+	width: 982px;
+	margin: 0 auto;
+}
+.footerL {
+	float: left;
+	margin: 29px 0 0 4px;
+	text-indent: 49px;
+	background: url(../img/music1.gif) no-repeat; 
+}
+.footerL h4 {
+	font: 12px/22px "宋体";
+	color: #666;
+}
+.footerL p {
+	font: 12px/22px "宋体";
+	color: #999;
+}
+.footerM {
+	float: left;
+	margin: 29px 0 0 70px;
+	background: url(../img/music1.gif) no-repeat 0px -103px;
+	text-indent: 47px;
+}
+.footerM h4 {
+	font: 12px/22px "宋体";
+	color: #666;
+}
+.footerM p {
+	font: 12px/22px "宋体";
+	color: #999;
+}
+.footerR {
+	position: relative;
+	float: right;
+	margin: 29px 0 0 87px;
+	background: url(../img/music1.gif) no-repeat 303px -184px;
+}
+.footerR p {
+	font: 12px/22px "宋体";
+	color: #9b9b9b;
+}
+.footerR p a {
+	color: #9b9b9b;
+}
+.footerR span {
+	position: absolute;
+	left: 324px;
+	top: 24px;
+	font: 12px/22px "宋体";
+	color: #9b9b9b;
+}
+.footerR span a {
+	color: #9b9b9b;
+}

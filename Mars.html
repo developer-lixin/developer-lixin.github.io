@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+	<meta charset="UTF-8">
+	<title>Mars</title>
+	<base target="_blank" />
+	<link rel="stylesheet" href="css/css.css">
+	<script src="js/move.js"></script>
+	<script src="js/js.js"></script>
+
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="javascript:;"><!-- <img id="logoimg" src="img/logobg.png" alt=""> --></a>
+		</div>
+		<div class="logopic"><img src="img/logo.png" alt=""></div>
+		<nav>
+			<div class="navdiv"><a href="javascript:;">About me</a></div>
+			<div class="navdiv"><a href="javascript:;">About site</a></div>
+			<!-- <input type="button" value="自评">
+			<input type="button" value="简介"> -->
+		</nav>
+	</header>
+	<div class="left">
+		<p>作品展示</p>
+	</div>
+	<div class="content">
+		<div class="outer" imgstyle="z-index:10;">
+			<div class="inner">
+				<img src="" alt="">
+			</div>
+		</div>
+		<div class="outer" style="z-index:9;">
+			<div class="inner">
+				<img src="" alt="">
+			</div>
+		</div>
+		<div class="outer" style="z-index:8;">
+			<div class="inner">
+				<img src="" alt="">
+			</div>
+		</div>
+		<div class="outer" style="z-index:7;">
+			<div class="inner">
+				<img src="" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="right">
+		<div class="contro">
+			<h1>响应式</h1>
+			<p>August 2016</p>
+			<h3>1,根据当前各种设备的主流分辨率，处理了4种不同屏幕适配</h3>
+			<h3>2,利用media 在不同分辨率加载不同的样式</h3>
+			<h3>3,合理的规划布局严格按照从左到右，从上到下，从外向里的页面布局架构，使页面布局更加具有扩展性 </h3>
+			<a href="sponsive/index.html" class="cir"></a>
+		</div>
+		<div class="contro">
+			<h1>qq会员整站</h1>
+			<p>july 2016</p>
+			<h3>1,兼容到IE8</h3>
+			<h3>2,使用了精灵图优化了http请求次数</h3>
+			<h3>3,页面中也运用了很多html5和CSS3 的样式，使得页面的展示变得更加的生动，伪类和动画的应用，使得画面变得更加的生动形
+象，更加的柔和，让用户在访问的时候感到轻松舒适。</h3>
+			<a href="qq.vip/index.html" class="cir"></a>
+
+		</div>
+		<div class="contro">
+			<h1>网易云</h1>
+			<p>June 2016</p>
+			<h3>1,兼容到IE6</h3>
+			<h3>2,使用了精灵图优化了http请求次数</h3>
+			<h3>3, 合理使用样式命名，提取了公共样式，优化了代码的可读性，避免命名冲突，提高代码的维护性和可读性。</h3>
+			<a href="wangyiyun/index.html" class="cir"></a>
+		</div>
+		
+		<div class="contro" style="display:block">
+			<h1>淘宝首页规划</h1>
+			<p>August 2016</p>
+			<h3>1,使用定位、浮动、背景图片处理完成页面布局</h3>
+			<h3>2,使用了精灵图优化了http请求次数</h3>
+			<h3>3,适用各种型号的手机</h3>
+			<a href="taobao/index.html" class="cir"></a>
+			
+		</div>
+	</div>
+
+	<div class="out">
+		<div id="shade"></div>
+		<div class="popbg"></div>
+		<div class="pop">
+			<div class="poptitle">About me</div>
+				这是自我介绍<input type="button" class="tohidden"><br><p>
+				熟悉HTML+CSS布局，熟练制作兼容主流浏览器的页面、掌握页面各种常见的动画与交互效果。熟练使用源生JS，能够使用源生JS进行面向对象的组件开发。对DOM兼容性、BOM操作、cookie操作、Ajax前后台数据交互、JSONP的跨域请求方案等能够熟练运用。对HTML5、CSS3有一定的理解和使用经验。<br/>&nbsp;&nbsp;&nbsp;&nbsp;做事认真、耐心，细致，具有良好的团队合作精神。能在压力下较好完成任务。兴趣广泛，有极强的学习能力和理解能力，善于接受新鲜事物。实用主义者，喜欢做的事有很大意义；完美主义者，希望可以把东西做的更好更优而不仅仅只是达到目的；有求知欲，比起知其然，更希望知其所以然。对前端及IT行业有极高的兴趣和关注，并在不断学习。</p>
+		</div>
+		<div class="pop">
+			<div class="poptitle">About site</div>
+				这是简介<input type="button" class="tohidden">
+				<p>本站制作使用了较多CSS3效果，由于某些内容只有WebKit内核支持，只做了chorme浏览器的兼容处理。导航处使用了font-face进行了字体处理，平常状态使用了字体阴影效果，移入后背景用transition改变，去掉阴影，使用background:-webkit-gradient、-webkit-text-fill-color和-webkit-background-clip的结合实现字体渐变；所有的展示DIV运用了2D旋转和3D旋转，在点击上处理了井深，Z层高度的问题；所有的DIV定位使用了CSS3的平移和缩放；点击从侧向变为正向使用了transition进行变换；点击更换层级使用了自己写的CSS3处理函数，完成对style函数返回值矩阵的操作；右侧文字标题使用函数将文字全部转为span包裹，进行运动处理，中间时间进行了透明度渐入效果处理，下部文字描述对每行的h3进行渐入运动处理；最下面的链接与层级运动一样，使用了CSS3处理函数来改变缩放。hover状态做了一个CSS3动画。</p>
+		</div>
+	</div>
+	<div class="menu">
+		<div id="phone">
+			<div class="list" id="list6"><p class="word">Mail:llxin1992@126.com</p></div>
+			
+			<div class="list" id="list4"><p class="word">Tel:18730269820</p></div>
+			<div class="list" id="list3"><p class="word">Auther:刘丽新</p></div>
+			
+			<div class="list" id="last"></div><p class="me">个人资料</p>
+		</div>
+	</div>
+	
+
+</body>
+</html>

@@ -1,0 +1,565 @@
+body, 
+p, 
+h1, 
+h2, 
+h3, 
+h4,
+h5, 
+h6, 
+dl, 
+dd, 
+form {
+	margin: 0;
+}
+ul, 
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	border: none;
+	vertical-align: top;
+}
+input,
+textarea {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+textarea {
+	resize: none;
+	overflow: auto;
+}
+table {
+	border-collapse: collapse;
+}
+th,
+td {
+	padding: 0;
+}
+.clearfix {
+	zoom: 1;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+body {
+	background: url(../img/header.png) repeat-x,url(../img/bg.png) repeat;
+	height: 312px;
+}
+.header {
+	background: url(../img/topbg.png) repeat-x;
+	padding: 13px 0;
+	
+}
+.wrap {
+	padding-left: 24px;
+}
+h1 {
+	float: left;
+	height: 87px;
+	width: 100%;
+}
+h1 img {
+	width: 58px;
+	height: 58px;
+	margin-top: 12px;
+}
+.nav {
+	float: left;
+	width: 100%;
+}
+.nav a {
+	float: left;
+	height: 90px;
+	width: 25%;
+	border-left: 1px dotted #677e73;
+}
+.nav .last {
+	border-right: 1px dotted #677e73;
+}
+.nav h2 {
+	margin-top: 8px;
+	font: 16px/24px "book antiqua";
+	color: #000;
+}
+.dotted {
+	display: inline-block;
+	width: 90%;
+	height: 4px;
+	background: url(../img/dotted.png) repeat-x;
+}
+.banner img {
+	width: 90%;
+	height: 100%;
+}
+.article li {
+	position: relative;
+	float: left;
+	width: 20%;
+	height: 80%;
+	padding: 24px 31px 22px 0;
+}
+.article img {
+	width: 100%;
+	height: 227px;
+}
+.article h2 img {
+	position: absolute;
+	left: 22px;
+	top: 54px;
+	width: 40.79%;
+	height: 11.89%;
+}
+.article a {
+	position: absolute;
+	left: 22px;
+	top: 100px;
+	width: 50%;
+	font: 12px/16px "book antiqua";
+	color: #fff;
+}
+.article a:hover {
+	text-decoration: underline;
+}
+.content {
+	padding-top: 24px;
+}
+.content .left {
+	float: left;
+	width: 57%;
+	height: 387px;
+	border-right: 1px dotted #98988e;
+	/*background: url(../img/dotted.png) repeat-x 0 409px;*/
+}
+.content .title {
+	height: 66px;
+	background: url(../img/bottom.png) repeat-x 0 65px;
+}
+.con1 {
+	height: 135px;
+	background: url(../img/bottom.png) repeat-x 0 134px;
+}
+.img1 img {
+	margin-top: 24px;
+	padding-right: 16.46%;
+}
+.pic img {
+	margin-top: 24px;
+}
+.pic img {
+	width: 72px;
+	height: 71px;
+	border: 1px solid #000;
+}
+.list {
+	height: 87px;
+	padding-top: 24px;
+	background: url(../img/bottom.png) repeat-x 0 110px;
+}
+.list li {
+	float: left;
+	width: 24.55%;
+}
+.list p {
+	margin-top: 15px;
+	font: 12px/22px "book antiqua";
+}
+.list p a {
+	color: #000;
+}
+.list1 {
+	height: 86px;
+	padding-top: 24px;
+	background: none;
+}
+.list1 li {
+	float: left;
+	width: 26.55%;
+}
+.content .right {
+	float: left;
+	width: 31%;
+	height: 407px;
+	padding-left: 30px;
+}
+.content .right .title {
+	margin-bottom: 22px;;
+}
+.content .right p {
+	font: 12px/14px "book antiqua";
+}
+.content .right .pic1 {
+	float: left;
+	width: 15px;
+	height: 48px;
+	margin: 0 4px 0 0;
+	background: url(../img/pbg.gif) no-repeat;
+}
+.content .right p + p {
+	text-indent: 2em;
+} 
+.footer {
+	position: relative;
+	padding: 24px 0 60px 0;
+	background: url(../img/footer.png) no-repeat right 0;
+}
+.footer .flist {
+	float: left;
+	width: 14.6%;
+}
+.footer a:hover img {
+	background: #ffff99;
+}
+.article1 {
+	float: left;
+	width: 25.69%;
+	border-right: 1px dotted #98988a;
+	border-left: 1px dotted #98988a;
+}
+.article1 h2 {
+	padding-left: 30px;
+}
+.article1 p {
+	width: 77.92%;
+	padding: 14px 37px 0 30px;
+	font: 12px/18px "book antiqua";
+	color: #000;
+}
+.article1 p a {
+	color: #000;
+	background: #ffff99;
+}
+.footer .last {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: inline-block;
+	height: 6px;
+	width: 100%;
+	background: url(../img/topbg.png) repeat-x 0 bottom;
+}
+@media all and (max-width: 464px) {
+	.wrap {
+		padding: 0 23px;
+		box-sizing: content-box;
+	}
+	h1 {
+	height: 87px;
+	width: 100%;
+	text-align: center;
+	}
+	.nav {
+		width: 100%;
+	}
+	.nav h2 {
+		font-weight: bold;
+	}
+	.nav a {
+		display: inline-block;
+		height: 42px;
+		width: 100%;
+		border-left: none;
+		border-top: 1px dotted #b8bba6;
+	}
+	.header .nav .last {
+		border-right: none;
+	}
+	.nav p {
+		display: none;
+	}
+	.dotted {
+		display: none;
+	}
+	.banner img {
+		width: 100%;
+		height: 50%;
+	}
+	.article {
+		display: none;
+	}
+	.content .left {
+		display: none;
+	}
+	.content .right {
+		width: 100%;
+		height: 33.33%;
+		margin-top: 45px;
+		padding: 0;
+	}
+	.content .right p {
+		float: left;
+		width: 100%;
+		margin: 0 20px 0 0;
+		font: 12px/16px "book antiqua";
+	}
+	.footer {
+		padding-top: 55px;
+		background: url(../img/footer.png) no-repeat right bottom;
+	}
+	.footer .flist {
+		float: none;
+		width: 100%;
+		padding-bottom: 31px;
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
+	.article1 {
+		width: 100%;
+		border-right: none;
+		border-left: none;
+		border-top: 1px dotted #cacab6;
+	}
+	.article1 h2 {
+		margin-top: 24px;
+		padding-left: 0;
+	}
+	.article1 p {
+		width: 100%;
+		padding: 5px 0 0 0;
+		margin-bottom: 150px;
+		font: 12px/16px "book antiqua";
+		color: #000;
+	}
+}
+@media all and (min-width: 465px) and (max-width: 744px) {
+	.wrap {
+		padding: 0 0 0 24px;
+		overflow: hidden;
+	}
+	h1 {
+		height: 87px;
+		width: 100%;
+		text-align: center;
+	}
+	.nav {
+		width: 100%;
+	}
+	.nav a {
+		float: left;
+		height: 87px;
+		width: 22%;
+		padding:0 5px 0 6px;
+		border-left: 1px dotted #677e73;
+	}
+	.header .nav .first {
+		border-left: none;
+	}
+	.header .nav .last {
+		border-right: none;
+	}
+	.nav h2 {
+		margin-top: 8px;
+		font: 14px/18px helvetica;
+		color: #000;
+	}
+	.nav p {
+		font: 12px/16px helvetica;
+		color: #000;
+	}
+	.dotted {
+		display: none;
+	}
+	.banner img {
+		width: 85%;
+		height: 50%;
+		padding: 0;
+	}
+	.article {
+		width: 100%;
+	}
+	.article li {
+		float: left;
+		width: 44.01%;
+		padding: 4.5% 3.95% 0 0; 
+	}
+	.article img {
+		height: 130px;
+	}
+	.article a {
+	width: 55%;
+	}
+	.content .left {
+		width: 95%;
+		border-right: none;
+	}
+	.content .right {
+		width: 95%;
+		height: 100%;
+		margin-top: 52px;
+		padding: 0;
+	}
+	.content .right .word {
+		width: 100%;
+		height: 100%;
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
+	.footer {
+		padding-top: 55px;
+		height: 296px;
+		background: url(../img/footer.png) no-repeat right bottom;
+	}
+	.footer .flist {
+		width: 51.95%;
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
+	.flist img {
+		width: 55%;
+		padding-bottom: 4px;
+	}
+	.flist3 img {
+		width: 50%;
+	}
+	.flist5 img {
+		width: 60%;
+	}
+	.flist2 img, 
+	.flist4 img,
+	.flist6 img {
+		width: 65%;
+	}
+	.article1 {
+		width: 45.05%;
+		border-right: none;
+	}
+	.article1 h2 {
+		padding-left: 17px;
+	}
+	.article1 p {
+		width: 90%;
+		padding: 5px 0 0 17px;
+		font: 12px/16px "book antiqua";
+		color: #000;
+	}
+	
+}
+@media all and (min-width: 745px) and (max-width: 1000px) {
+	.wrap {
+		padding: 0 0 0 6.32%;
+	}
+	h1 {
+		float: left;
+		height: 87px;
+		width: 25%;
+	}
+	h1 img {
+		width: 58px;
+		height: 58px;
+		margin-top: 12px;
+	}
+	.nav {
+		float: left;
+		width: 70%;
+	}
+	.nav a {
+		float: left;
+		height: 87px;
+		width: 17%;
+		padding:0 10px 0 20px;
+		border-left: 1px dotted #677e73;
+	}
+	.nav .last {
+		border-right: 1px dotted #677e73;
+	}
+	.nav h2 {
+		margin-top: 12px;
+		font: 14px/18px helvetica;
+		color: #000;
+	}
+	.nav p {
+		font: 12px/16px helvetica;
+		color: #000;
+	}
+	.dotted {
+		background: none;
+	}
+	.article li {
+		float: left;
+		padding: 24px 31px 22px 0;
+	}
+	.content .right p {
+		font: 12px/16px helvetica;
+	}
+	.footer {
+		height: 252px;
+		padding: 20px 0 0 0;
+		background: url(../img/footer.png) no-repeat right bottom;
+	}
+	.flist img {
+		width: 65%;
+		padding-bottom: 4px;
+	}
+	.flist3 img {
+		width: 60%;
+	}
+	.flist5 img {
+		width: 70%;
+	}
+	.flist2 img, 
+	.flist4 img,
+	.flist6 img {
+		width: 80%;
+	}
+	.article1 h2 {
+		padding-left: 17px;
+	}
+	.article1 p {
+		width: 83%;
+		padding: 5px 0 0 17px;
+		font: 12px/16px "book antiqua";
+		color: #000;
+	}
+}
+@media all and (min-width: 1000px)   {
+	.wrap {
+		padding: 0 0 0 90px;
+	}
+	h1 {
+		float: left;
+		height: 87px;
+		width: 25%;
+	}
+	h1 img {
+		width: 58px;
+		height: 58px;
+		margin-top: 12px;
+	}
+	.nav {
+		float: left;
+		width: 70%;
+	}
+	.nav a {
+		float: left;
+		height: 87px;
+		width: 17%;
+		padding:0 10px 0 20px;
+		border-left: 1px dotted #677e73;
+	}
+	.nav .last {
+		border-right: 1px dotted #677e73;
+	}
+	.nav h2 {
+		margin-top: 12px;
+		font: 14px/16px "book antiqua";
+		color: #000;
+	}
+	.nav p {
+		font: 12px/14px "book antiqua";
+		color: #000;
+	}
+	.article li {
+		float: left;
+		padding: 24px 31px 22px 0;
+	}
+}
