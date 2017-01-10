@@ -6,10 +6,11 @@ window.onload = function(){
 			{"webkitTransform":"matrix(0.6,0,0,0.6,-240,0)","zIndex":"98"},
 			{"webkitTransform":"matrix(0.4,0,0,0.4,-360,0)","zIndex":"97"},
 			{"webkitTransform":"matrix(0.28,0,0,0.28,-420,0)","zIndex":"96"},
+			{"webkitTransform":"matrix(0.28,0,0,0.28,-480,0)","zIndex":"95"},
 		]
 		var jsontemp = {"webkitTransform":"matrix(1.1,0,0,1.1,100,0)","opacity":0};
 		
-		var arrImgSrc = ["img/1.png","img/2.png","img/3.png","img/4.png"];
+		var arrImgSrc = ["img/1.png","img/2.png","img/3.png","img/4.png","img/5.png"];
 		var aDiv = document.getElementsByClassName("outer");
 		var aDivIn = document.getElementsByClassName("inner");
 		var oNav = document.getElementsByTagName("nav")[0];
