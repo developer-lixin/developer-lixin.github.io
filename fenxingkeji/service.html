@@ -12,6 +12,7 @@
 <script src="js/word.js"></script>
 <script src="js/whole.js"></script>
 <script src="js/vivus.min.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
 </head>
 <body>
     <div class="header">
@@ -388,10 +389,11 @@
 	</div>
 
 <script>
-idx=0;
-idx1=0;
-idx2=0;
-	
+var idx = 0,
+idx1 = 0,
+idx2 = 0,
+sto= 0 ,
+sw = 0
 $(function(){
 	winload();
 	$(".left").find(".d:eq("+idx+")").css({rotate:0}).addClass("now");
@@ -458,6 +460,30 @@ img0.onload=function(){
 		sw=1;
 	});
 }
+
+//滚轮触发
+$(".service").mousewheel(function(event,delta,deltaX,deltaY){
+	if(sw==1){
+		sw=0;
+		if(delta<0){
+			idx++;
+			idx1++;
+			idx2++;
+			if(idx2==bg.length){idx2=0;}
+			run(delta);
+			run2(delta);
+		}
+		else{
+			idx--;
+			idx1--;
+			idx2--;
+			if(idx2<0){idx2=bg.length-1;}
+			run(delta);
+			run2(delta);
+		}
+	}
+});
+
 //导航点击
 $(".nav_service").find(".item").click(function(){
 	if(sw==1){
@@ -586,7 +612,7 @@ function animates(idx){
 
 //导航变更
 function changeNav(e){	
-	$(".nav_service").find(".ul:visible").slideUp(500,"easeOutCubic");
+	$(".nav_service").find("ul:visible").slideUp(500,"easeOutCubic");
 	$(".nav_service .line").find("span").animate({
 		width:0
 	},500,"easeOutCubic",function(){
@@ -604,6 +630,7 @@ function changeNav(e){
 		});
 		
 	});
+
 }
 
 var obj1=document.getElementById("service");
@@ -619,7 +646,7 @@ obj1.addEventListener('touchstart',function(event){
 obj1.addEventListener('touchmove',function(event){
 	if(sw==1){
 		touch = event.targetTouches[0];
-		$(".service .d.now").css({rotate:(touch.screenY-y0)*-0.1});
+		$(".service .now").css({rotate:(touch.screenY-y0)*-0.1});
 		end=touch.screenY;		
 	}
 	event.preventDefault();//阻止浏览器默认事件
@@ -644,7 +671,7 @@ obj1.addEventListener('touchend',function(event){
 		}
 		else{
 			sw=0;
-			$(".service .d.now").transition({rotate:0},500,function(){sw=1;});
+			$(".service .now").transition({rotate:0},500,function(){sw=1;});
 		}
 		end="";
 	}

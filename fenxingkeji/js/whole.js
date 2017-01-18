@@ -14,6 +14,7 @@ $(window).resize(htmlsize);
 
 //全局js
 $(function(){
+	
 	//start
 	if($(window).width()>=1440){
 		$("#main").css({
