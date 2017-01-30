@@ -1358,7 +1358,7 @@ body {
 /* decoration.css(d) */
 .dbanner {
 	position: relative;
-	width: 100%;
+	width: 1180px;
 	height: 500px;
 	text-align: center;
 }
@@ -1375,7 +1375,7 @@ body {
 }
 .dimg img {
 	position: absolute;
-	left: 12px;
+	left: 57px;
 	top: 0;
 	opacity: 0;
 	transition: all 560ms;
@@ -1385,7 +1385,7 @@ body {
 	width: 60%;
 	height: 30px;
 	position: absolute;
-	left: 43%;
+	left: 47%;
 	bottom: 10px;
 	z-index: 2;
 }
